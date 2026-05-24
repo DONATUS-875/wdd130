@@ -7,11 +7,6 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -30,18 +25,36 @@ header, main, footer {
     width: 100%;
 }
 
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 16px;
+}
+header img {
+    height: 60px;
+}
+
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
+nav {
+    margin-top: 0.5rem;
+}
+
+nav a {
+    color: var(--accent2-color);
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
 }
 
 footer {
-    align-items: center;
+    text-align: center;
     padding: 16px;
 }
 
@@ -53,16 +66,10 @@ footer {
     margin-top: 8px;
 }
 
-@media (max-width: 600px) {
-    header, main, footer {
-        max-width: 100%;
-    }
+.socialmedia a {
+    text-decoration: none;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
 .socialmedia img {
     width: 40px;
     height: 40px;
@@ -81,15 +88,46 @@ img {
 h1 {
     position: absolute;
     top: 20px;
-    width: 100%;
+    left: 20px;
     padding: 16px;
-    text-align: center;
-    opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff;
+    opacity: 0.7;
 }
 
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 10px;
+    max-width: 300px;
+}
 .hero article img {
     float: right;
     width: 125px;
+    margin-left: 10px;
+}
+
+section {
+    padding: 2rem;
+}
+
+section h2 {
+    color: var(--primary-color);
+}
+
+@media (max-width: 600px) {
+
+    header,
+    main,
+    footer {
+        max-width: 100%;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
