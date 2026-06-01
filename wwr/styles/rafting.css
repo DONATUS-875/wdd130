@@ -80,21 +80,21 @@ h2 {
 
 .adventures-gallery {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 1rem;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .adventures-gallery figure {
-    width: 18%;
+    flex: 1;
     margin: 0;
     text-align: center;
 }
 
 .adventures-gallery img {
     width: 100%;
-    height: 100%;
+    height: 80%;
     object-fit: cover;
 }
 
