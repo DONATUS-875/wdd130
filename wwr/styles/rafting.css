@@ -80,14 +80,14 @@ h2 {
 
 .adventures-gallery {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
     gap: 1rem;
-    flex-wrap: wrap;
 }
 
 .adventures-gallery figure {
-    flex: 1rem;
-    min-width: 150px;
+    flex: 1 1 18%;
     text-align: center;
 }
 
