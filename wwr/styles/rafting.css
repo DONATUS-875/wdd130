@@ -74,27 +74,24 @@ h2 {
     width: 100%;
 }
 
-.adventures {
+.adventure {
     padding: 2rem;
 }
 
-.adventures-gallery {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: row;
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     gap: 10px;
 }
 
-.adventures-gallery figure {
-    flex: 1;
+.adventure-gallery figure {
     margin: 0;
     text-align: center;
 }
 
-.adventures-gallery img {
+.adventure-gallery img {
     width: 100%;
-    height: 80%;
+    height: 100%;
     object-fit: cover;
 }
 
