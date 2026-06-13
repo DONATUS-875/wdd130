@@ -163,7 +163,7 @@ figcaption {
 }
 
 .hero h1 {
-    position: static;
+    position: absolute;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -455,4 +455,95 @@ footer nav a {
     color: #333;
 }
 
+.trips-hero .cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #0f4c75;
+    color: #fff;
+    margin-top: 1rem;
+}
 
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.trp-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trip-content {
+    padding: 1rem;
+}
+
+.trip-content h2 {
+    margin-bottom: 1rem;
+    color: #0f4c75;
+}
+
+.trip-content p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.trip-content ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 0;
+}
+
+.trip-table-section {
+    padding: 2rem;
+}
+
+.trip-table-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #0f4c75;
+}
+
+.trip-table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.trip-table-section th,
+.trip-table-section td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.trip-table-section th {
+    background-color: #0f4c75;
+    color: #fff;
+}
+
+.trip-table-section tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.trip-card:last-child {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.trip-card:last-child img {
+    display: block;
+    margin: 0 auto;
+}
