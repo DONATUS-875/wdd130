@@ -538,7 +538,6 @@ footer nav a {
 }
 
 .trip-card:last-child {
-    width: 80%;
     margin: 0 auto;
     text-align: center;
 }
@@ -547,3 +546,4 @@ footer nav a {
     display: block;
     margin: 0 auto;
 }
+
